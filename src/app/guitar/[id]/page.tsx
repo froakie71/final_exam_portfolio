@@ -12,7 +12,13 @@ import RelatedProducts from '../../components/RelatedProducts';
 import Reviews from '../../components/Reviews';
 import SocialShare from '../../components/SocialShare';
 
-export default function GuitarDetail({ params }: { params: { id: string } }) {
+type Props = {
+    params: {
+        id: string;
+    };
+};
+
+export default function GuitarDetail({ params }: Props) {
     const [guitar, setGuitar] = useState<Guitar | null>(null);
     const { addToCart } = useCart();
     const { showNotification } = useNotification();

@@ -1,18 +1,29 @@
 'use client';
 import { useEffect, useState, ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { motion, TargetAndTransition } from 'framer-motion';
 
-type MotionProps = {
-    className?: string;
+interface ClientProps {
     children: ReactNode;
-    initial?: any;
-    animate?: any;
-    transition?: any;
-    whileHover?: any;
+    className?: string;
     onClick?: () => void;
-};
+    initial?: TargetAndTransition;
+    animate?: TargetAndTransition;
+    transition?: {
+        duration?: number;
+        delay?: number;
+    };
+    whileHover?: TargetAndTransition;
+}
 
-export function ClientMotion({ children, className, initial, animate, transition, whileHover, onClick }: MotionProps) {
+export function ClientMotion({ 
+    children,
+    className,
+    initial,
+    animate,
+    transition,
+    whileHover,
+    onClick
+}: ClientProps) {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -20,15 +31,11 @@ export function ClientMotion({ children, className, initial, animate, transition
     }, []);
 
     if (!isMounted) {
-        return (
-            <div className={className} onClick={onClick}>
-                {children}
-            </div>
-        );
+        return <div className={className} onClick={onClick}>{children}</div>;
     }
 
     return (
-        <motion.div 
+        <motion.div
             className={className}
             initial={initial}
             animate={animate}
@@ -41,7 +48,15 @@ export function ClientMotion({ children, className, initial, animate, transition
     );
 }
 
-export function ClientMotionSection({ children, className, initial, animate, transition, whileHover, onClick }: MotionProps) {
+export function ClientMotionSection({ 
+    children,
+    className,
+    initial,
+    animate,
+    transition,
+    whileHover,
+    onClick
+}: ClientProps) {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -49,15 +64,11 @@ export function ClientMotionSection({ children, className, initial, animate, tra
     }, []);
 
     if (!isMounted) {
-        return (
-            <section className={className} onClick={onClick}>
-                {children}
-            </section>
-        );
+        return <section className={className} onClick={onClick}>{children}</section>;
     }
 
     return (
-        <motion.section 
+        <motion.section
             className={className}
             initial={initial}
             animate={animate}
