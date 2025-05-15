@@ -8,11 +8,11 @@ interface SearchAndFilterProps {
 }
 
 const categories = [
-    { id: 'all', name: 'All Guitars' },
-    { id: 'electric', name: 'Electric' },
-    { id: 'acoustic', name: 'Acoustic' },
-    { id: 'classical', name: 'Classical' },
-    { id: 'bass', name: 'Bass' }
+    { id: 'all', name: 'All Projects' },
+    { id: 'web', name: 'Web Apps' },
+    { id: 'mobile', name: 'Mobile Apps' },
+    { id: 'desktop', name: 'Desktop Apps' },
+    { id: 'other', name: 'Other' }
 ];
 
 export default function SearchAndFilter({ onSearch, onCategoryChange }: SearchAndFilterProps) {
@@ -30,7 +30,7 @@ export default function SearchAndFilter({ onSearch, onCategoryChange }: SearchAn
                     <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input
                         type="text"
-                        placeholder="Search guitars..."
+                        placeholder="Search projects..."
                         className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         onChange={(e) => onSearch(e.target.value)}
                     />

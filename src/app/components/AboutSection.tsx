@@ -6,13 +6,14 @@ export default function AboutSection() {
         <section id="about" className="py-16 px-4">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                    About Our Guitar Shop
+                    Skills & Growth Areas
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative aspect-[4/3] w-full">
-                        <div className="relative w-full h-full rounded-lg overflow-hidden bg-gray-200">                            <Image
-                                src="https://images.unsplash.com/photo-1568663041326-6348c761f7af?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Guitar Shop Interior with Wall of Guitars"
+                        <div className="relative w-full h-full rounded-lg overflow-hidden bg-gray-200">
+                            <Image
+                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                alt="Coding workspace with laptop"
                                 fill
                                 className="object-cover transition-transform duration-300 hover:scale-105"
                                 priority
@@ -22,23 +23,30 @@ export default function AboutSection() {
                     </div>
                     <div>
                         <p className="text-lg text-gray-600 mb-6">
-                            Welcome to Guitar Shop, your premier destination for high-quality
-                            guitars and musical equipment. With years of experience in the industry,
-                            we pride ourselves on offering expert guidance and an exceptional
-                            collection of instruments.
+                            As a growing developer, I'm constantly working to enhance my skills across various areas. 
+                            Currently focusing on deepening my expertise in modern web development technologies and 
+                            exploring new frameworks.
                         </p>
                         <p className="text-lg text-gray-600 mb-6">
-                            Our team of passionate musicians and guitar experts is dedicated to
-                            helping you find the perfect instrument that matches your style and needs.
+                            My goal is to become proficient in building scalable, performant applications 
+                            while maintaining clean, maintainable code architecture.
                         </p>
                         <div className="grid grid-cols-2 gap-8 mt-8">
                             <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                                <div className="text-3xl font-bold text-indigo-600">1000+</div>
-                                <div className="text-gray-600">Guitars Sold</div>
+                                <div className="text-3xl font-bold text-indigo-600">60%</div>
+                                <div className="text-gray-600">Backend Development</div>
                             </div>
                             <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                                <div className="text-3xl font-bold text-indigo-600">98%</div>
-                                <div className="text-gray-600">Happy Customers</div>
+                                <div className="text-3xl font-bold text-indigo-600">85%</div>
+                                <div className="text-gray-600">Frontend Mastery</div>
+                            </div>
+                            <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div className="text-3xl font-bold text-indigo-600">70%</div>
+                                <div className="text-gray-600">Testing Coverage</div>
+                            </div>
+                            <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div className="text-3xl font-bold text-indigo-600">75%</div>
+                                <div className="text-gray-600">DevOps Skills</div>
                             </div>
                         </div>
                     </div>

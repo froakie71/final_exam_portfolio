@@ -5,24 +5,28 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 className="text-xl font-bold mb-4">Guitar Shop</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">                    <div>
+                        <h3 className="text-xl font-bold mb-4">Francis Ampoon</h3>
                         <p className="text-gray-400">
-                            Your destination for premium guitars and exceptional service.
+                            Frontend Developer specializing in React and Flutter development.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/#guitars" className="text-gray-400 hover:text-white">
-                                    Our Guitars
+                                <Link href="/#projects" className="text-gray-400 hover:text-white">
+                                    Projects
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/#about" className="text-gray-400 hover:text-white">
-                                    About Us
+                                    About Me
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#skills" className="text-gray-400 hover:text-white">
+                                    Skills
                                 </Link>
                             </li>
                             <li>
@@ -33,11 +37,11 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+                        <h3 className="text-xl font-bold mb-4">Contact Info</h3>
                         <p className="text-gray-400">
-                            Email: info@guitarshop.com<br />
-                            Phone: (555) 123-4567<br />
-                            Address: 123 Guitar Street, Music City
+                            Email: francis@example.com<br />
+                            LinkedIn: linkedin.com/in/francisdoe<br />
+                            GitHub: github.com/francisdoe
                         </p>
                     </div>
                 </div>

@@ -10,8 +10,8 @@ export default function Hero() {
     });
 
     return (        <div className="relative h-[80vh] overflow-hidden">            <Image
-                src="https://images.unsplash.com/photo-1686421402964-24b6d8247dff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Classic Electric Guitar Collection"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                alt="Professional Developer Workspace"
                 fill
                 className="object-cover"
                 priority
@@ -25,18 +25,18 @@ export default function Hero() {
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.8 }}
                     className="max-w-4xl mx-auto px-4"
-                >
-                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                        Find Your Perfect Sound
+                >                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+                        Francis Ampoon
                     </h1>
+                    <h2 className="text-3xl text-indigo-400 mb-4">Frontend Developer</h2>
                     <p className="text-xl text-gray-200 mb-8">
-                        Discover an extensive collection of premium guitars from the world&apos;s finest craftsmen
+                        Passionate developer with 3 years of experience building responsive websites using React and Flutter
                     </p>
                     <a
-                        href="#guitars"
+                        href="#projects"
                         className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 transition-colors duration-200"
                     >
-                        Explore Collection
+                        View My Work
                     </a>
                 </motion.div>
             </div>

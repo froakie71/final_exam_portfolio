@@ -4,22 +4,13 @@ export interface Guitar {
     id: string;
     name: string;
     brand: string;
-    price: number;
+    category: string;
     imageUrl: string;
     description: string;
-    category: 'electric' | 'acoustic' | 'classical' | 'bass';
-    images: string[];
-    reviews: Review[];
-    specs: {
-        bodyType: string;
-        neckWood: string;
-        bodyWood: string;
-        fingerboard: string;
-        frets: number;
-        pickups: string;
-        scale: string;
+    images?: string[];
+    specs?: {
+        [key: string]: string | number;
     };
-    stock: number;
 }
 
 export interface Category {

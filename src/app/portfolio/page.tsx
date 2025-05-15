@@ -14,24 +14,23 @@ export default function Portfolio() {
                 transition={{ duration: 0.8 }}
                 className="max-w-4xl mx-auto px-4 mb-20"
             >
-                <h1 className="text-5xl font-bold text-gray-900 mb-4">Francis Ampoon</h1>
-                <h2 className="text-2xl text-indigo-600 mb-6">Frontend Developer</h2>
+                <h1 className="text-5xl font-bold text-gray-900 mb-4">Francis Ampoon</h1>                <h2 className="text-2xl text-indigo-600 mb-6">Full Stack Developer & E-commerce Specialist</h2>
                 
                 {/* Social Links */}
                 <div className="flex space-x-4">
                     <SocialLink 
-                        href="mailto:francis@example.com"
+                        href="mailto:froakie71@gmail.com"
                         icon={<EmailIcon className="w-5 h-5" />}
-                        text="francis@example.com"
+                        text="froakie71@gmail.com"
                     />
                     <SocialLink 
-                        href="https://linkedin.com/in/francisdoe"
-                        icon={<LinkedinIcon className="w-5 h-5" />}
-                        text="LinkedIn"
+                        href="https://github.com/froakie71"
+                        icon={<GithubIcon className="w-5 h-5" />}
+                        text="GitHub"
                         external={true}
                     />
-                    <SocialLink 
-                        href="https://github.com/francisdoe"
+                    <SocialLink
+                        href="https://www.linkedin.com/in/francis-ampoon/"
                         icon={<GithubIcon className="w-5 h-5" />}
                         text="GitHub"
                         external={true}
@@ -45,11 +44,11 @@ export default function Portfolio() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
                 className="max-w-4xl mx-auto px-4 mb-20"
-            >
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                    Passionate Frontend Developer with 3 years of experience building responsive 
-                    websites using React and Flutter. Focused on creating clean, user-friendly interfaces.
+            >                <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>                <p className="text-lg text-gray-600 leading-relaxed">
+                    As a dedicated full-stack developer with a strong focus on creating exceptional e-commerce experiences, I bring innovative solutions to life. 
+                    I excel in leveraging Next.js and cutting-edge web technologies to craft intuitive and engaging online platforms. My Guitar Shop project 
+                    showcases my expertise in developing sophisticated e-commerce solutions with advanced features like dynamic filtering, responsive interfaces, 
+                    and secure transaction handling. I'm passionate about creating digital experiences that combine technical excellence with user-centered design.
                 </p>
             </ClientMotionSection>
 
@@ -65,40 +64,19 @@ export default function Portfolio() {
                     <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
-                    >
-                        <h3 className="font-semibold text-indigo-600 mb-4">Frontend</h3>
+                    >                        <h3 className="font-semibold text-indigo-600 mb-4">Frontend</h3>
                         <ul className="space-y-2 text-gray-600">
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                HTML/CSS
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                JavaScript
+                                Next.js
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
                                 TypeScript
                             </li>
-                        </ul>
-                    </ClientMotion>
-                    <ClientMotion 
-                        whileHover={{ y: -5 }}
-                        className="bg-white p-6 rounded-lg shadow-sm"
-                    >
-                        <h3 className="font-semibold text-indigo-600 mb-4">Frameworks</h3>
-                        <ul className="space-y-2 text-gray-600">
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                React
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Flutter
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Dart
+                                Tailwind CSS
                             </li>
                         </ul>
                     </ClientMotion>
@@ -106,19 +84,39 @@ export default function Portfolio() {
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
-                        <h3 className="font-semibold text-indigo-600 mb-4">Tools</h3>
+                        <h3 className="font-semibold text-indigo-600 mb-4">Backend & State</h3>
                         <ul className="space-y-2 text-gray-600">
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Git
+                                React Context
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Firebase
+                                Server Components
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                REST APIs
+                                API Routes
+                            </li>
+                        </ul>
+                    </ClientMotion>
+                    <ClientMotion 
+                        whileHover={{ y: -5 }}
+                        className="bg-white p-6 rounded-lg shadow-sm"
+                    >
+                        <h3 className="font-semibold text-indigo-600 mb-4">E-commerce Features</h3>
+                        <ul className="space-y-2 text-gray-600">
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Shopping Cart
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Product Filtering
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Wishlist
                             </li>
                         </ul>
                     </ClientMotion>
@@ -133,32 +131,39 @@ export default function Portfolio() {
                 className="max-w-4xl mx-auto px-4 mb-20"
             >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <ClientMotion 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Weather App</h3>
-                        <div className="text-indigo-600 mb-4">Flutter & OpenWeather API</div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Guitar Shop</h3>
+                        <div className="text-indigo-600 mb-4">Next.js, TypeScript & Tailwind CSS</div>
                         <ul className="space-y-2 text-gray-600 mb-4">
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Displays real-time weather for any location
+                                Modern e-commerce platform with responsive design
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Features dynamic backgrounds and animations
+                                Dynamic product filtering and search functionality
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Shopping cart and wishlist with persistent storage
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Product categorization (Electric, Acoustic, Classical, Bass)
                             </li>
                         </ul>
                         <div className="flex gap-4 mt-6">
                             <SocialLink 
-                                href="https://github.com/francisdoe/weather-app"
+                                href="https://github.com/froakie71/final_exam_portfolio"
                                 icon={<CodeBracketIcon className="w-5 h-5" />}
                                 text="Source Code"
                                 external={true}
                             />
                             <SocialLink 
-                                href="https://weather-app-demo.vercel.app"
+                                href="https://guitar-shop-demo.vercel.app"
                                 icon={<GlobeAltIcon className="w-5 h-5" />}
                                 text="Live Demo"
                                 external={true}
@@ -169,16 +174,20 @@ export default function Portfolio() {
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">E-commerce Website</h3>
-                        <div className="text-indigo-600 mb-4">React & Firebase</div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Portfolio Website</h3>
+                        <div className="text-indigo-600 mb-4">Next.js & Framer Motion</div>
                         <ul className="space-y-2 text-gray-600 mb-4">
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                User login, shopping cart, and admin dashboard
+                                Responsive design with smooth animations
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
-                                Payment integration with Stripe
+                                Server-side rendering for optimal performance
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></span>
+                                Modern UI with Tailwind CSS
                             </li>
                         </ul>
                         <div className="flex gap-4 mt-6">
@@ -207,10 +216,9 @@ export default function Portfolio() {
                 className="max-w-4xl mx-auto px-4"
             >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Education</h2>
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">BSc in Computer Science</h3>
-                    <div className="text-indigo-600">University of TechLand</div>
-                    <div className="text-gray-600">Graduated 2022</div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">                    <h3 className="text-xl font-semibold text-gray-900 mb-2">BSc in Computer Science</h3>
+                    <div className="text-indigo-600">AMA University</div>
+                    <div className="text-gray-600">2023-Present</div>
                 </div>
             </ClientMotionSection>
         </main>

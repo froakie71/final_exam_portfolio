@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Guitar Shop - Find Your Perfect Sound",
-  description: "Discover an extensive collection of premium guitars from the world's finest craftsmen",
+  title: "Francis Doe - Frontend Developer Portfolio",
+  description: "Personal portfolio of Francis Doe, a Frontend Developer specializing in React and Flutter development",
 };

@@ -1,6 +1,6 @@
 'use client';
 import { Navigation } from './components/Navigation';
-import CartSidebar from './components/CartSidebar';
+import Footer from './components/Footer';
 
 export default function ClientLayout({
   children,
@@ -11,7 +11,7 @@ export default function ClientLayout({
     <>
       <Navigation />
       {children}
-      <CartSidebar />
+      <Footer />
     </>
   );
 }

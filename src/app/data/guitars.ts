@@ -3,97 +3,62 @@ import { Guitar } from '../types';
 export const guitars: Guitar[] = [
     {
         id: '1',
-        name: 'Stratocaster Professional',
-        brand: 'Fender',
-        price: 1499.99,
-        imageUrl: 'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&q=80&w=800',
-        description: 'The Fender Stratocaster Professional is a versatile electric guitar with a classic tone.',
-        category: 'electric',
-        images: [
-            'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1619558041249-0523903712e1?auto=format&fit=crop&q=80&w=800'
-        ],
-        reviews: [],
+        name: 'Weather App',
+        brand: 'Flutter Project',
+        category: 'mobile',
+        imageUrl: 'https://images.unsplash.com/photo-1561470508-fd4df1ed90b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D',
+        description: 'A beautiful weather application built with Flutter, featuring real-time weather data and dynamic backgrounds.',
         specs: {
-            bodyType: 'Double Cutaway',
-            neckWood: 'Maple',
-            bodyWood: 'Alder',
-            fingerboard: 'Rosewood',
-            frets: 22,
-            pickups: '3 Single-coil',
-            scale: '25.5"'
-        },
-        stock: 10
+            framework: 'Flutter',
+            language: 'Dart',
+            features: 'Real-time weather updates, Dynamic UI, Location services',
+            platform: 'iOS & Android',
+            architecture: 'BLoC Pattern'
+        }
     },
     {
         id: '2',
-        name: 'Les Paul Standard',
-        brand: 'Gibson',
-        price: 2699.99,
-        imageUrl: 'https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&q=80&w=800',
-        description: 'The Gibson Les Paul Standard delivers rich, powerful sound with outstanding sustain.',
-        category: 'electric',
-        images: [
-            'https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&q=80&w=800'
-        ],
-        reviews: [],
+        name: 'E-commerce Website',
+        brand: 'React Project',
+        category: 'web',
+        imageUrl: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2564&q=80',
+        description: 'A full-featured e-commerce platform built with React and Firebase, including user authentication and Stripe payments.',
         specs: {
-            bodyType: 'Single Cutaway',
-            neckWood: 'Mahogany',
-            bodyWood: 'Mahogany',
-            fingerboard: 'Rosewood',
-            frets: 22,
-            pickups: '2 Humbucker',
-            scale: '24.75"'
-        },
-        stock: 5
+            frontend: 'React.js',
+            backend: 'Firebase',
+            database: 'Cloud Firestore',
+            authentication: 'Firebase Auth',
+            payments: 'Stripe Integration'
+        }
     },
     {
         id: '3',
-        name: 'Grand Auditorium',
-        brand: 'Taylor',
-        price: 1999.99,
-        imageUrl: 'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?auto=format&fit=crop&q=80&w=800',
-        description: 'The Taylor Grand Auditorium offers exceptional acoustic tone with modern playability.',
-        category: 'acoustic',
-        images: [
-            'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?auto=format&fit=crop&q=80&w=800'
-        ],
-        reviews: [],
+        name: 'Portfolio Website',
+        brand: 'Next.js Project',
+        category: 'web',
+        imageUrl: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2555&q=80',
+        description: 'My personal portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and responsive design.',
         specs: {
-            bodyType: 'Grand Auditorium',
-            neckWood: 'Mahogany',
-            bodyWood: 'Sitka Spruce',
-            fingerboard: 'Ebony',
-            frets: 20,
-            pickups: 'Expression System 2',
-            scale: '25.5"'
-        },
-        stock: 8
+            framework: 'Next.js 14',
+            styling: 'Tailwind CSS',
+            animations: 'Framer Motion',
+            deployment: 'Vercel',
+            features: 'Server Components, TypeScript'
+        }
     },
     {
         id: '4',
-        name: 'Classical C40',
-        brand: 'Yamaha',
-        price: 499.99,
-        imageUrl: 'https://images.unsplash.com/photo-1556449895-a33c9dba33dd?auto=format&fit=crop&q=80&w=800',
-        description: 'The Yamaha C40 is a perfect classical guitar for both beginners and intermediate players.',
-        category: 'classical',
-        images: [
-            'https://images.unsplash.com/photo-1556449895-a33c9dba33dd?auto=format&fit=crop&q=80&w=800'
-        ],
-        reviews: [],
+        name: 'Task Manager',
+        brand: 'Flutter Project',
+        category: 'mobile',
+        imageUrl: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80',
+        description: 'A task management application built with Flutter, featuring clean UI and local storage capabilities.',
         specs: {
-            bodyType: 'Classical',
-            neckWood: 'Nato',
-            bodyWood: 'Spruce',
-            fingerboard: 'Rosewood',
-            frets: 19,
-            pickups: 'None',
-            scale: '25.6"'
-        },
-        stock: 15
+            framework: 'Flutter',
+            storage: 'SQLite',
+            stateManagement: 'Provider',
+            ui: 'Material Design 3',
+            platform: 'Cross-platform'
+        }
     }
 ];

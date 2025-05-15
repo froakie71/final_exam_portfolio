@@ -1,13 +1,7 @@
 import { Inter } from "next/font/google";
 import { type ReactNode } from 'react';
 import "./globals.css";
-import { CartProvider } from './context/CartContext';
-import { WishlistProvider } from './context/WishlistContext';
-import { NotificationProvider } from './context/NotificationContext';
 import ClientLayout from './layout.client';
-import { metadata as pageMetadata } from './metadata';
-
-export const metadata = pageMetadata;
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,27 +9,22 @@ const inter = Inter({
   adjustFontFallback: false
 });
 
+export const metadata = {
+  title: 'Francis Ampoon - Portfolio',
+  description: 'Personal portfolio showcasing my web development projects and skills',
+};
+
 export default function RootLayout({
   children,
 }: {
   children: ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <CartProvider>
-          <WishlistProvider>
-            <NotificationProvider>
-              <div className="min-h-screen flex flex-col">
-                <ClientLayout>
-                  <main className="flex-grow">
-                    {children}
-                  </main>
-                </ClientLayout>
-              </div>
-            </NotificationProvider>
-          </WishlistProvider>
-        </CartProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );
