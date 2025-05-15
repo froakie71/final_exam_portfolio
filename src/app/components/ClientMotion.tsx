@@ -1,18 +1,18 @@
 'use client';
 import { useEffect, useState, ReactNode } from 'react';
-import { motion, TargetAndTransition } from 'framer-motion';
+import { motion, VariantLabels, Target } from 'framer-motion';
 
 interface ClientProps {
     children: ReactNode;
     className?: string;
     onClick?: () => void;
-    initial?: TargetAndTransition;
-    animate?: TargetAndTransition;
+    initial?: boolean | Target | VariantLabels;
+    animate?: boolean | Target | VariantLabels;
     transition?: {
         duration?: number;
         delay?: number;
     };
-    whileHover?: TargetAndTransition;
+    whileHover?: Target;
 }
 
 export function ClientMotion({ 
