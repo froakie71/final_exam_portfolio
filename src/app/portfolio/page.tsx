@@ -1,47 +1,46 @@
 'use client';
-import { motion } from 'framer-motion';
+import { ClientMotion, ClientMotionSection } from '../components/ClientMotion';
 import { LinkedinIcon, GithubIcon, EmailIcon } from '../components/SocialIcons';
 import { CodeBracketIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import { SocialLink } from '../components/SocialLink';
 
 export default function Portfolio() {
     return (
         <main className="min-h-screen bg-gray-50 py-20">
             {/* Hero Section */}
-            <motion.div 
+            <ClientMotion 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="max-w-4xl mx-auto px-4 mb-20"
             >
-                <h1 className="text-5xl font-bold text-gray-900 mb-4">Francis Doe</h1>
+                <h1 className="text-5xl font-bold text-gray-900 mb-4">Francis Ampoon</h1>
                 <h2 className="text-2xl text-indigo-600 mb-6">Frontend Developer</h2>
                 
                 {/* Social Links */}
                 <div className="flex space-x-4">
-                    <a href="mailto:francis@example.com" 
-                       className="flex items-center space-x-2 text-gray-600 hover:text-indigo-600">
-                        <EmailIcon className="w-5 h-5" />
-                        <span>francis@example.com</span>
-                    </a>
-                    <a href="https://linkedin.com/in/francisdoe" 
-                       className="flex items-center space-x-2 text-gray-600 hover:text-indigo-600"
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        <LinkedinIcon className="w-5 h-5" />
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/francisdoe" 
-                       className="flex items-center space-x-2 text-gray-600 hover:text-indigo-600"
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        <GithubIcon className="w-5 h-5" />
-                        <span>GitHub</span>
-                    </a>
+                    <SocialLink 
+                        href="mailto:francis@example.com"
+                        icon={<EmailIcon className="w-5 h-5" />}
+                        text="francis@example.com"
+                    />
+                    <SocialLink 
+                        href="https://linkedin.com/in/francisdoe"
+                        icon={<LinkedinIcon className="w-5 h-5" />}
+                        text="LinkedIn"
+                        external={true}
+                    />
+                    <SocialLink 
+                        href="https://github.com/francisdoe"
+                        icon={<GithubIcon className="w-5 h-5" />}
+                        text="GitHub"
+                        external={true}
+                    />
                 </div>
-            </motion.div>
+            </ClientMotion>
 
             {/* About Section */}
-            <motion.section 
+            <ClientMotionSection 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
@@ -52,10 +51,10 @@ export default function Portfolio() {
                     Passionate Frontend Developer with 3 years of experience building responsive 
                     websites using React and Flutter. Focused on creating clean, user-friendly interfaces.
                 </p>
-            </motion.section>
+            </ClientMotionSection>
 
             {/* Skills Section */}
-            <motion.section 
+            <ClientMotionSection 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
@@ -63,7 +62,7 @@ export default function Portfolio() {
             >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Skills</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <motion.div 
+                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
@@ -82,8 +81,8 @@ export default function Portfolio() {
                                 TypeScript
                             </li>
                         </ul>
-                    </motion.div>
-                    <motion.div 
+                    </ClientMotion>
+                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
@@ -102,8 +101,8 @@ export default function Portfolio() {
                                 Dart
                             </li>
                         </ul>
-                    </motion.div>
-                    <motion.div 
+                    </ClientMotion>
+                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
@@ -122,12 +121,12 @@ export default function Portfolio() {
                                 REST APIs
                             </li>
                         </ul>
-                    </motion.div>
+                    </ClientMotion>
                 </div>
-            </motion.section>
+            </ClientMotionSection>
 
             {/* Projects Section */}
-            <motion.section 
+            <ClientMotionSection 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -135,7 +134,7 @@ export default function Portfolio() {
             >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <motion.div 
+                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
@@ -152,27 +151,21 @@ export default function Portfolio() {
                             </li>
                         </ul>
                         <div className="flex gap-4 mt-6">
-                            <a
+                            <SocialLink 
                                 href="https://github.com/francisdoe/weather-app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600"
-                            >
-                                <CodeBracketIcon className="w-5 h-5" />
-                                <span>Source Code</span>
-                            </a>
-                            <a
+                                icon={<CodeBracketIcon className="w-5 h-5" />}
+                                text="Source Code"
+                                external={true}
+                            />
+                            <SocialLink 
                                 href="https://weather-app-demo.vercel.app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600"
-                            >
-                                <GlobeAltIcon className="w-5 h-5" />
-                                <span>Live Demo</span>
-                            </a>
+                                icon={<GlobeAltIcon className="w-5 h-5" />}
+                                text="Live Demo"
+                                external={true}
+                            />
                         </div>
-                    </motion.div>
-                    <motion.div 
+                    </ClientMotion>
+                    <ClientMotion 
                         whileHover={{ y: -5 }}
                         className="bg-white p-6 rounded-lg shadow-sm"
                     >
@@ -189,31 +182,25 @@ export default function Portfolio() {
                             </li>
                         </ul>
                         <div className="flex gap-4 mt-6">
-                            <a
+                            <SocialLink 
                                 href="https://github.com/francisdoe/ecommerce"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600"
-                            >
-                                <CodeBracketIcon className="w-5 h-5" />
-                                <span>Source Code</span>
-                            </a>
-                            <a
+                                icon={<CodeBracketIcon className="w-5 h-5" />}
+                                text="Source Code"
+                                external={true}
+                            />
+                            <SocialLink 
                                 href="https://ecommerce-demo.vercel.app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600"
-                            >
-                                <GlobeAltIcon className="w-5 h-5" />
-                                <span>Live Demo</span>
-                            </a>
+                                icon={<GlobeAltIcon className="w-5 h-5" />}
+                                text="Live Demo"
+                                external={true}
+                            />
                         </div>
-                    </motion.div>
+                    </ClientMotion>
                 </div>
-            </motion.section>
+            </ClientMotionSection>
 
             {/* Education Section */}
-            <motion.section 
+            <ClientMotionSection 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
@@ -225,7 +212,7 @@ export default function Portfolio() {
                     <div className="text-indigo-600">University of TechLand</div>
                     <div className="text-gray-600">Graduated 2022</div>
                 </div>
-            </motion.section>
+            </ClientMotionSection>
         </main>
     );
 }

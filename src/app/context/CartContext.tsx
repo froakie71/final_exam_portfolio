@@ -20,14 +20,14 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 const CART_STORAGE_KEY = 'guitar-shop-cart';
 
-export function CartProvider({ children }: { children: ReactNode }) {
-    const [items, setItems] = useState<CartItem[]>(() => {
-        if (typeof window !== 'undefined') {
-            const saved = localStorage.getItem(CART_STORAGE_KEY);
-            return saved ? JSON.parse(saved) : [];
+export function CartProvider({ children }: { children: ReactNode }) {    const [items, setItems] = useState<CartItem[]>([]);
+    
+    useEffect(() => {
+        const saved = localStorage.getItem(CART_STORAGE_KEY);
+        if (saved) {
+            setItems(JSON.parse(saved));
         }
-        return [];
-    });
+    }, []);
     const [isCartOpen, setIsCartOpen] = useState(false);
     const { showNotification } = useNotification();
 
