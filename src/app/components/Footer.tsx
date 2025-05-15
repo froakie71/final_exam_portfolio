@@ -44,9 +44,8 @@ export default function Footer() {
                             GitHub: github.com/francisdoe
                         </p>
                     </div>
-                </div>
-                <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-                    © {new Date().getFullYear()} Guitar Shop. All rights reserved.
+                </div>                <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                    © {new Date().getFullYear()} My Portfolio
                 </div>
             </div>
         </footer>

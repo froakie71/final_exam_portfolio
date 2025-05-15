@@ -45,10 +45,10 @@ export default function Portfolio() {
                 transition={{ delay: 0.2 }}
                 className="max-w-4xl mx-auto px-4 mb-20"
             >                <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>                <p className="text-lg text-gray-600 leading-relaxed">
-                    As a dedicated full-stack developer with a strong focus on creating exceptional e-commerce experiences, I bring innovative solutions to life. 
-                    I excel in leveraging Next.js and cutting-edge web technologies to craft intuitive and engaging online platforms. My Guitar Shop project 
-                    showcases my expertise in developing sophisticated e-commerce solutions with advanced features like dynamic filtering, responsive interfaces, 
-                    and secure transaction handling. I'm passionate about creating digital experiences that combine technical excellence with user-centered design.
+                    Based in Cebu, Philippines, a thriving hub for mobile and web development in the region, I am a dedicated full-stack developer passionate about creating innovative digital solutions. 
+                    Being part of Cebu's dynamic tech community has exposed me to cutting-edge development practices and emerging technologies. The city's growing 
+                    reputation as a tech destination has provided me with numerous opportunities to work on exciting projects and collaborate with talented developers 
+                    in the local scene. I leverage this vibrant tech ecosystem to deliver high-quality, user-centered web applications that meet modern business needs.
                 </p>
             </ClientMotionSection>
 
