@@ -39,6 +39,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-4">Contact Info</h3>
                         <p className="text-gray-400">
+                            Address: Ibabao San-Vicente Lilo-an Cebu<br />
                             Email: francis@example.com<br />
                             LinkedIn: linkedin.com/in/francisdoe<br />
                             GitHub: github.com/francisdoe
